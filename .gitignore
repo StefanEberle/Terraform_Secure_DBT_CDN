@@ -1,0 +1,59 @@
+# Terraform-spezifische Dateien und Verzeichnisse
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Lokale .terraform Verzeichnisse
+**/.terraform/*
+
+# CLI-Konfigurationsdateien
+.terraformrc
+terraform.rc
+
+# Zustandssicherungsdateien
+*.tfstate.backup
+
+# Verschlüsselte Geheimnisse
+*.auto.tfvars.enc
+
+# Log-Dateien
+*.log
+
+# Sensitive Variablendateien
+terraform.tfvars
+*.auto.tfvars
+
+# Ignoriere alle .tfplan Dateien
+*.tfplan
+
+# Ignoriere CLI-Konfigurationsdateien
+.terraformrc
+terraform.rc
+
+# Ignoriere Verzeichnisse, die von IDE oder Editoren erstellt werden
+.vscode/
+.idea/
+
+# Ignoriere macOS-spezifische Dateien
+.DS_Store
+
+# Ignoriere temporäre Dateien
+*.tmp
+*.bak
+*.swp
+
+# ZIP
+*.zip
+
+# Packages
+lambda_edge/lambda_edge_package_docker/
